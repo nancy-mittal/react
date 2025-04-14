@@ -9,7 +9,7 @@ function App() {
   return (
     <div style={{ padding: "20px" }}>
       <h1>React</h1>
-      <Greeting name="Nancy ">This is a reusable Greeting component!</Greeting>
+      <Greeting name="Nancy ">Reusable Greeting component!</Greeting>
       <MessageClass message="This is from a Class Component" />
     </div>    
       
