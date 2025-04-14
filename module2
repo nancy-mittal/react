@@ -1,0 +1,52 @@
+//module 2
+
+//class component
+import logo from './logo.svg';
+import './App.css';
+import Greeting from './components/components/Greeting';
+
+function App() {
+  return (
+    <div style={{ padding: "20px" }}>
+      <h1>🔥 React + Firebase Demo</h1>
+      <Greeting name="Nancy ">This is a reusable Greeting component!</Greeting>
+      <MessageClass message="This is from a Class Component" />
+    </div>    
+      
+  );
+}
+
+export default App;
+
+//functional component
+
+import React from 'react';
+
+function Greeting({ name, children }) {
+  return (
+    <div>
+      <h2>Hello, {name} 👋</h2>
+      <p>{children}</p>
+    </div>
+  );
+}
+
+export default Greeting;
+
+//
+
+//class component
+
+import React, { Component } from 'react';
+
+class MessageClass extends Component {
+  render() {
+    return (
+      <div>
+        <h3>Message: {this.props.message}</h3>
+      </div>
+    );
+  }
+}
+
+export default MessageClass;
